@@ -1,0 +1,24 @@
+create table Party(
+	partyId SERIAL Primary Key,
+	firstName varchar(20) Not Null,
+	lastname varchar(20) Not Null,
+	address varchar(40),
+	city varchar(20),
+	zip varchar(10),
+	state varchar(20),
+	country varchar(20),
+	phone varchar(10)
+);
+
+create table UserLogin(
+	userLoginId varchar(50) Primary Key,
+	password varchar(100) Not Null,
+	partyId Integer References Party(partyId) on delete cascade
+);
+
+
+insert into Party Values
+(1,'Siddharth','Singh','81/4,Vallabh','Indore','402004','Madhya Pradesh','India','78965412135');
+
+insert into UserLogin Values
+('sid','abc',1);
