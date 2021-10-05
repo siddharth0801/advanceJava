@@ -8,13 +8,13 @@
 <title>Error</title>
 </head>
 <body>
-		<div class="jumbotron container mt-5">
+	<div class="jumbotron container mt-5">
 		
-        	<h1 class="display-4">First name or Last name missing</h1>
+        	<h1 class="display-4">Something went wrong...</h1>
         	<hr class="my-4">
-        	<p>First Name or Last Name cannot be empty...</p>
-        	<a class="btn btn-success btn-lg" href="register.jsp" role="button">Try Again</a>
+        	<p></p>
+        	<a class="btn btn-success btn-lg" href="login.jsp" role="button">Try Again</a>
         	
-    	</div>
+    </div>
 </body>
 </html>

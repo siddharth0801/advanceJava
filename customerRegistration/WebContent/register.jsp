@@ -7,7 +7,6 @@
 		function validateForm() {
   		let fn = document.forms["registerForm"]["firstName"].value;
   		let ln = document.forms["registerForm"]["lastName"].value;
-  		
   		if (fn == "") {
     		alert("Empty First Name");
     		return false;
@@ -42,44 +41,44 @@
                         <form name="registerForm" id="register-form" class="form" action="Register" onsubmit="return validateForm()" method="POST">
                             <div class="form-group">
                                 <label for="firstName" class="text-info">First Name</label><br>
-                                <input type="text" name="firstName" id="firstName" class="form-control">
+                                <input type="text" name="firstName" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label for="lastName" class="text-info">Last Name:</label><br>
-                                <input type="text" name="lastName" id="lastName" class="form-control">
+                                <input type="text" name="lastName" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label for="address" class="text-info">Address:</label><br>
-                                <input type="text" name="address" id="address" class="form-control">
+                                <input type="text" name="address" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label for="city" class="text-info">City:</label><br>
-                                <input type="text" name="city" id="city" class="form-control">
+                                <input type="text" name="city" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label for="state" class="text-info">State:</label><br>
-                                <input type="text" name="state" id="state" class="form-control">
+                                <input type="text" name="state" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label for="country" class="text-info">Country:</label><br>
-                                <input type="text" name="country" id="country" class="form-control">
+                                <input type="text" name="country" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label for="zip" class="text-info">Zip:</label><br>
-                                <input type="text" name="zip" id="zip" class="form-control">
+                                <input type="text" name="zip" class="form-control">
                             </div>
                             <div class="form-group">
                                 <label for="phone" class="text-info">Phone:</label><br>
-                                <input type="text" name="phone" id="phone" class="form-control">
+                                <input type="text" name="phone" class="form-control">
                             </div>
                             <hr>
                             <div class="form-group">
                                 <label for="uname" class="text-info">Username:</label><br>
-                                <input type="text" name="uname" id="uname" class="form-control" required>
+                                <input type="text" name="uname" class="form-control" required>
                             </div>
                             <div class="form-group">
                                 <label for="passw" class="text-info">Password:</label><br>
-                                <input type="password" name="passw" id="passw" class="form-control" required>
+                                <input type="password" name="passw" class="form-control" required>
                             </div>
                             <div class="form-group">
                             <br><br>

@@ -27,35 +27,35 @@
                         <form id="update-form" class="form" action="UpdateData" method="POST">
                             <div class="form-group">
                                 <label for="firstName" class="text-info">First Name:</label><br>
-                                <input type="text" name="firstName" id="firstName" value=${Party.firstName} class="form-control" >
+                                <input type="text" name="firstName" class="form-control" value=${Party.firstName}>
                             </div>
                             <div class="form-group">
                                 <label for="lastName" class="text-info">Last Name:</label><br>
-                                <input type="text" name="lastName" id="lastName" value=${Party.lastname} class="form-control">
+                                <input type="text" name="lastName" value=${Party.lastname} class="form-control" >
                             </div>
                             <div class="form-group">
                                 <label for="address" class="text-info">Address:</label><br>
-                                <input type="text" name="address" id="address" value=${Party.address} class="form-control">
+                                <input type="text" name="address" value=${Party.address} class="form-control">
                             </div>
                             <div class="form-group">
                                 <label for="city" class="text-info">City:</label><br>
-                                <input type="text" name="city" id="city" value=${Party.city} class="form-control">
+                                <input type="text" name="city" value=${Party.city} class="form-control">
                             </div>
                             <div class="form-group">
                                 <label for="state" class="text-info">State:</label><br>
-                                <input type="text" name="state" id="state" value=${Party.state} class="form-control">
+                                <input type="text" name="state" value=${Party.state} class="form-control">
                             </div>
                             <div class="form-group">
                                 <label for="country" class="text-info">Country:</label><br>
-                                <input type="text" name="country" id="country" value=${Party.country} class="form-control">
+                                <input type="text" name="country" value=${Party.country} class="form-control">
                             </div>
                             <div class="form-group">
                                 <label for="zip" class="text-info">Zip:</label><br>
-                                <input type="text" name="zip" id="zip" value=${Party.zip} class="form-control">
+                                <input type="text" name="zip" value=${Party.zip} class="form-control">
                             </div>
                             <div class="form-group">
                                 <label for="phone" class="text-info">Phone:</label><br>
-                                <input type="text" name="phone" id="phone" value=${Party.phone} class="form-control">
+                                <input type="text" name="phone" value=${Party.phone} class="form-control">
                             </div>
                             <div class="form-group">
                                 <input type="submit" name="submit" class="btn btn-dark btn-md" value="Update">

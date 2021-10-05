@@ -33,10 +33,13 @@ public class Register extends HttpServlet {
 		if(fname.isEmpty()||lname.isEmpty()) {
 			response.sendRedirect("error.jsp");
 		}
+		else if(phone.length()>10){
+			response.sendRedirect("allerror.jsp");
+		}
 		else {
 			Party pt = new Party(fname, lname, add, city, zip, state, country, phone);
 			
-			
+			System.out.println(pt.toString());
 			
 			boolean ans = Crud.insert(pt);
 			if(ans) {
