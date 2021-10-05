@@ -31,7 +31,6 @@ public class Dao {
 			
 		} 
 		catch (Exception e) {
-			
 			e.printStackTrace();
 		}
 		
@@ -72,7 +71,8 @@ public class Dao {
 		Connection con = Connectdb.connect();
 		String sql="select * from Party where Upper(firstName)=Upper(?) or Upper(lastName)=Upper(?)";
 		PreparedStatement pstmt;
-		try {
+		try 
+		{
 			pstmt = con.prepareStatement(sql);
 			pstmt.setString(1, fname);
 			pstmt.setString(2, lname);
@@ -80,7 +80,7 @@ public class Dao {
 			ResultSet rs = pstmt.executeQuery();
 			
 			while (rs.next()) {
-
+				
 				Party pt = new Party();
 				pt.setFirstName(rs.getString(2));
 				pt.setLastname(rs.getString(3));
@@ -92,7 +92,6 @@ public class Dao {
 				pt.setPhone(rs.getString(9));
 				pt.setPartyId(rs.getInt(1));
 				al.add(pt);
-				
 			}
 		} 
 		catch (Exception e) {
@@ -109,9 +108,9 @@ ArrayList<Party> al = new ArrayList<Party>();
 		Connection con = Connectdb.connect();
 		String sql="select * from Party";
 		Statement stmt;
-		try {
+		try 
+		{
 			stmt = con.createStatement();
-			
 			
 			ResultSet rs = stmt.executeQuery(sql);
 			
@@ -131,7 +130,8 @@ ArrayList<Party> al = new ArrayList<Party>();
 				
 			}
 		} 
-		catch (Exception e) {
+		catch (Exception e)
+		{
 			e.printStackTrace();
 		}
 		
