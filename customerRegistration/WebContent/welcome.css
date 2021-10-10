@@ -1,0 +1,10 @@
+@charset "ISO-8859-1";
+*{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body h1{
+	padding-top: 5%;
+}
+#search{
+	padding: 10%;
+}

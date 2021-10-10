@@ -1,0 +1,26 @@
+@charset "ISO-8859-1";
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffff80;
+  height: 100vh;
+  
+}
+#update{
+  
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#update .container #update-row #update-column #update-box {
+  margin-top: 120px;
+  max-width: 600px;
+  height: 100%;
+  border: 2px solid #9C9C9C;
+  background-color: white;
+  
+}
+#update .container #update-row #update-column #update-box #update-form {
+  padding: 20px;
+}
+#update .container #update-row #update-column #update-box #update-form #update-link {
+  margin-top: -85px;
+}
