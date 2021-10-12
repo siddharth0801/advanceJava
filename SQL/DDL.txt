@@ -2,10 +2,10 @@ create table Party(
 	partyId SERIAL Primary Key,
 	firstName varchar(20) Not Null,
 	lastname varchar(20) Not Null,
-	address varchar(40),
+	address text,
 	city varchar(20),
 	zip varchar(10),
-	state varchar(20),
+	state text,
 	country varchar(20),
 	phone varchar(10)
 );
